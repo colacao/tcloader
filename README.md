@@ -1,5 +1,5 @@
-    ========================
-    同程js/css/html 编译
+========================
+同程js/css/html 编译
     
     var gulp = require("gulp"),
       livereload = require("gulp-livereload"),
