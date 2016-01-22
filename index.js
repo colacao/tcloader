@@ -29,10 +29,10 @@ module.exports = function(options) {
         var nameArr = sp[sp.length - 1].split('.');
         var name = nameArr.slice(0,nameArr.length-1).join('.');
         if (options == "m") {
-            file.contents = new Buffer("$define(\"" + name + "\",function(require, exports, module){" + html + "},\'" + options + "\');");
+            file.contents = new Buffer("$define(\"" + name + "\",function(_require, exports, module){" + html + "},\'" + options + "\');");
         } else {
             html = encodeHtml(html);
-            file.contents = new Buffer("$define(\"" + name + "\",function(require, exports, module){return \'" + html + "\'},\'" + options + "\');");
+            file.contents = new Buffer("$define(\"" + name + "\",function(_require, exports, module){return \'" + html + "\'},\'" + options + "\');");
         }
         self.push(file);
         cb();
