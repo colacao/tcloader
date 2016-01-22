@@ -1,0 +1,21 @@
+{
+  "name": "gulp-tcloader",
+  "version": "2.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tcloader"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:colacao/tcloader.git"
+  },
+  "author": "caoyue",
+  "license": "ISC",
+  "devDependencies": {
+    "through2": "^2.0.0"
+  }
+}
